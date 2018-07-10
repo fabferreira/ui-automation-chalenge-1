@@ -15,7 +15,7 @@ var challenge1Page = Object.create(page, {
     },
     jobList: {
         get: function () {
-            return $(/*DEFINE THE SELECTOR HERE*/)
+            return $("a.jobs-item:nth-child(5)")
         }
     },
 
