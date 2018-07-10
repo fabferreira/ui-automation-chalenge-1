@@ -9,6 +9,12 @@ var challenge2Page = Object.create(page, {
         }
     },
 
+    bulle: {
+        get: function() {
+            return $("html body div.bulle");
+        }
+    }
+
     /** define page methods */
     open: {
         value: function () {
