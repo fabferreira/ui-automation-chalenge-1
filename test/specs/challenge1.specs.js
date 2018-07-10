@@ -8,15 +8,14 @@ describe('Mindera QA Graduate Challenge 1:', function () {
 
     describe('Mindera QA Graduate Challenge 1.1 :', function () {
         it('You must click on the People&Culture button in order to make the test pass', function () {
-            /** Insert the code here */
-            expect(browser.getUrl()).to.be.equal("https://www.mindera.com/people-and-culture/");
+        challenge1Page.peopleAndCulture.click()
+        expect(browser.getUrl()).to.be.equal("https://mindera.com/people-and-culture/");
         });
     });
 
     describe('Mindera QA Graduate Challenge 1.2 :', function () {
         it('You must change the expect assertion in order to make the test pass', function () {
-            /** Complete the expect() bellow */
-            expect(challenge1Page.contactCity).to.be.equal("PORTO, PT");
+            expect(challenge1Page.contactCity.getText()).to.be.equal("PORTO, PT");
         });
     });
 
